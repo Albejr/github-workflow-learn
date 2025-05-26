@@ -1,15 +1,15 @@
 name: Print_Hello_World
-on: 
+on:
   push:
     branches: [develop]
   pull_request:
     branches: [develop]
-  workflow_dispatch: 
+  workflow_dispatch:
     inputs:
       example_input:
-        description: 'An example input for the workflow'
+        description: "An example input for the workflow"
         required: false
-        default: 'default_value'
+        default: "default_value"
 jobs:
   print_hello_world_job:
     runs-on: ubuntu-latest
