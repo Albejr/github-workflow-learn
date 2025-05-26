@@ -1,4 +1,4 @@
-name: Print: Hello world!
+name: Print_Hello_World
 on: [push]
 jobs:
   print_hello_world:
