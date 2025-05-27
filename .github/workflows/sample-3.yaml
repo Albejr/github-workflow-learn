@@ -1,0 +1,15 @@
+name: List_Repository_Flow
+on:
+    push:
+        branches: [develop]
+    workflow_dispatch:
+jobs:
+    list_repository_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: List Repository Sep 1
+              run: echo "Listing repository contents..."
+            - name: List Repository Sep 2
+              run: ls -la
+            - name: List Repository Sep 3
+              run: echo "Repository listing complete!"
