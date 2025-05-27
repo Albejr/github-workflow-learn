@@ -4,8 +4,4 @@ on:
     branches: [develop]
 jobs:
   call_reusable_job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Call Reusable Workflow Step 1
-        run: echo "Calling Reusable Workflow..."
-      - uses: ./.github/workflows/sample-5_1.yaml
+      uses: ./.github/workflows/sample-5_1.yaml
