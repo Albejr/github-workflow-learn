@@ -7,6 +7,8 @@ jobs:
     list_repository_job:
         runs-on: ubuntu-latest
         steps:
+            - name: Using Checkout Repository
+              uses: actions/checkout@v4
             - name: List Repository Sep 1
               run: echo "Listing repository contents..."
             - name: List Repository Sep 2
