@@ -9,7 +9,7 @@ jobs:
   print_hello_world_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Hello World Sep 1
+      - name: Print Hello World Step 1
         run: echo "Hello world!"
-      - name: Print Hello World Sep 2
+      - name: Print Hello World Step 2
         run: echo "Great Job!"

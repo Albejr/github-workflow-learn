@@ -1,0 +1,18 @@
+name: List_Context_Variables_Flow
+on:
+  workflow_dispatch:
+jobs:
+  list_context_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print context Step 1
+        run: |
+          echo "The event that triggered this workflow is ${{ github.event_name }}."
+          echo "The repository name is ${{ github.repository }}."
+          echo "The actor who triggered this workflow is ${{ github.actor }}."
+      - name: Print context Step 2
+        run: |
+          echo "The workflow job name is ${{ job.name }}."
+          echo "The workflow job status is ${{ job.status }}."
+          echo "The workflow job steps are ${{ toJson(job.steps) }}."
+          echo "The workflow job strategy is ${{ toJson(job.strategy) }}."
