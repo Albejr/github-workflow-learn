@@ -7,18 +7,18 @@ jobs:
     steps:
       - name: Print context Step 1
         run: |
-          echo "The event that triggered this workflow is ${{ github.event_name }}."
-          echo "The repository name is ${{ github.repository }}."
-          echo "The actor who triggered this workflow is ${{ github.actor }}."
+          echo "The event that triggered this workflow is => ${{ github.event_name }}."
+          echo "The repository name is => ${{ github.repository }}."
+          echo "The actor who triggered this workflow is => ${{ github.actor }}."
       
       - name: Print context Step 2
-        run: echo "The workflow job status is ${{ job.status }}."
+        run: echo "The workflow job status is => ${{ job.status }}."
 
       - name: Set context Step 3
         id: ContextStep3
         run: echo "::set-output name=my_output::some value"
       - name: Print context Step 4
-        run: echo "The output from step3 is ${{ steps.ContextStep3.outputs.my_output }}."
+        run: echo "The output from step3 is => ${{ steps.ContextStep3.outputs.my_output }}."
       
       - name: Print context Step 5
-        run: echo "The runner's information is ${{ runner.os }}."
+        run: echo "The runner's information is => ${{ runner.os }}."

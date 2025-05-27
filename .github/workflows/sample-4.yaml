@@ -11,10 +11,10 @@ jobs:
     steps:
       - name: Print Variables Step 1
         run: |
-          echo "The value of MY_GLOBAL_VARIABLE is ${{env.MY_GLOBAL_VARIABLE}}"
-          echo "The value of MY_LOCAL_VARIABLE is ${{env.MY_LOCAL_VARIABLE}}"
-          echo "The value of MY_ENV_VARIABLE is ${{vars.MY_TOKEN_VARIABLE}}"
-          echo "The value of SECRET is ${{secrets.MY_TOKEN_SECRET}}"
+          echo "The value of MY_GLOBAL_VARIABLE is => ${{env.MY_GLOBAL_VARIABLE}}"
+          echo "The value of MY_LOCAL_VARIABLE is => ${{env.MY_LOCAL_VARIABLE}}"
+          echo "The value of MY_ENV_VARIABLE is => ${{vars.MY_TOKEN_VARIABLE}}"
+          echo "The value of SECRET is => ${{secrets.MY_TOKEN_SECRET}}"
   list_dynamic_job:
     runs-on: ubuntu-latest
     steps:
@@ -22,4 +22,4 @@ jobs:
         run: echo "MY_DYNAMIC_VARIABLE=dynamic value" >> $GITHUB_ENV
 
       - name: Print Dynamic Variable Step 2
-        run: echo $MY_DYNAMIC_VARIABLE
+        run: echo "The value of MY_DYNAMIC_VARIABLE is => $MY_DYNAMIC_VARIABLE"

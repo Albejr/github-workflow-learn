@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Use Output From First Job Step 1
-        run: echo "Received from From First Job ${{ needs.create_needed_job.outputs.data_output_1 }}"
+        run: echo "Received from From First Job => ${{ needs.create_needed_job.outputs.data_output_1 }}"
