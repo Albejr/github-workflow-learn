@@ -6,5 +6,5 @@ jobs:
   print_scheduled_message_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Scheduled Message Sep 1
+      - name: Print Scheduled Message Step 1
         run: echo "This message is printed every 5 minutes."

@@ -9,9 +9,9 @@ jobs:
         steps:
             - name: Using Checkout Repository
               uses: actions/checkout@v4
-            - name: List Repository Sep 1
+            - name: List Repository Step 1
               run: echo "Listing repository contents..."
-            - name: List Repository Sep 2
+            - name: List Repository Step 2
               run: ls -la
-            - name: List Repository Sep 3
+            - name: List Repository Step 3
               run: echo "Repository listing complete!"
