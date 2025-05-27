@@ -1,4 +1,4 @@
-name: List_Variables_Flow
+name: 04_List_Variables_Flow
 on:
   workflow_dispatch:
 env:

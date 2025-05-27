@@ -1,4 +1,4 @@
-name: Print_Scheduled_Message_Flow
+name: 02_Print_Scheduled_Message_Flow
 on:
   schedule: # This cron expression runs the workflow every 5 minutes
     - cron: "*/5 * * * *" 

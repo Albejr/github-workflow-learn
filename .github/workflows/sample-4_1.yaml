@@ -1,4 +1,4 @@
-name: List_Context_Variables_Flow
+name: 04_1_List_Context_Variables_Flow
 on:
   workflow_dispatch:
 jobs:
@@ -10,9 +10,15 @@ jobs:
           echo "The event that triggered this workflow is ${{ github.event_name }}."
           echo "The repository name is ${{ github.repository }}."
           echo "The actor who triggered this workflow is ${{ github.actor }}."
+      
       - name: Print context Step 2
-        run: |
-          echo "The workflow job name is ${{ job.name }}."
-          echo "The workflow job status is ${{ job.status }}."
-          echo "The workflow job steps are ${{ toJson(job.steps) }}."
-          echo "The workflow job strategy is ${{ toJson(job.strategy) }}."
+        run: echo "The workflow job status is ${{ job.status }}."
+
+      - name: Set context Step 3
+        id: ContextStep3
+        run: echo "::set-output name=my_output::some value"
+      - name: Print context Step 4
+        run: echo "The output from step3 is ${{ steps.ContextStep3.outputs.my_output }}."
+      
+      - name: Print context Step 5
+        run: echo "The runner's information is ${{ runner.os }}."
