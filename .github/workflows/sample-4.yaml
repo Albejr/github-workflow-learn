@@ -1,0 +1,15 @@
+name: List_Variable_Flow
+on:
+    workflow_dispatch:
+jobs:
+    list_variable_job:
+        runs-on: ubuntu-latest
+        env:
+            MY_VARIABLE: "Hello, World!"
+        steps:
+            - name: Print Variable Sep 1
+              run: echo "The value of MY_VARIABLE is $MY_VARIABLE"
+            - name: Print Variable Sep 2
+              run: echo "The value of SECRET is ${{secrets.MY_TOKEN_SECRET}}"
+            - name: Print Variable Sep 3
+              run: echo "Variable printing complete!"
