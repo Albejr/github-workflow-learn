@@ -1,10 +1,7 @@
 name: 01_Messages_Action
 runs:
-  using: composite
+  using: "composite"
   steps:
     - name: Print Message Step 1
       run: echo "Hello from Messages Action 01 Step 1"
-    - name: Print Message Step 2
-      run: echo "Hello from Messages Action 01 Step 2"
-    - name: Print Message Step 3
-      run: echo "Messages Action Completed!"
+      shell: bash # Added bash shell, because it is required in GitHub Actions composite actions while in act it is optional

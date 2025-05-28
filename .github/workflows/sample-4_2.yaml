@@ -1,6 +1,8 @@
 name: 04_2_List_Context_Variables_Flow
+
 on:
   workflow_dispatch:
+
 jobs:
   use_environment_job: #This is useful if the variable is going to be used across an Action but the variable is set dynamically in a step.
     runs-on: ubuntu-latest

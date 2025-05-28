@@ -1,8 +1,11 @@
 name: 04_List_Variables_Flow
+
 on:
   workflow_dispatch:
+
 env:
   MY_GLOBAL_VARIABLE: "Any Global Value" # This variable is available to all jobs
+
 jobs:
   list_variable_job:
     runs-on: ubuntu-latest
