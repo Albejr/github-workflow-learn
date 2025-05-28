@@ -6,3 +6,4 @@ runs:
     - name: Run good-bye.sh File Step 1
       run: good-bye.sh
       shell: bash
+# Added bash shell, because it is required in GitHub Actions composite actions while in act it is optional.

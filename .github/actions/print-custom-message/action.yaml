@@ -12,3 +12,5 @@ runs:
   steps:
     - name: Print Message Step 1
       run: echo "say => ${{ inputs.INPUT_TEXT_1 }}!"
+      shell: bash
+# Added bash shell, because it is required in GitHub Actions composite actions while in act it is optional.
