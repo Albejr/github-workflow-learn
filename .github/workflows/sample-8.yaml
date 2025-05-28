@@ -1,0 +1,14 @@
+name: 08_Composite_Actions_Flow
+on: 
+    workflow_dispatch:
+jobs:
+  composite_action_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Composite Action Step 1
+        uses: ./.github/actions/sample-1.yaml
+        
+      - name: Run Composite Action Step 2
+        uses: ./.github/actions/sample-2.yaml
+        
+        
