@@ -1,6 +1,6 @@
 name: 01_Messages_Action
 runs:
-  using: "composite"
+  using: composite
   steps:
     - name: Print Message Step 1
       run: echo "Hello from Messages Action 01 Step 1"
