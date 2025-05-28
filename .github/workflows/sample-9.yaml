@@ -21,7 +21,7 @@ jobs:
         uses: ./.github/actions/run-sleep
 
       - name: Run Composite Action Step 3
-        uses: ./.github/actions/print-custom-message
+        uses: ./.github/actions/print-custom-message.yaml
         with:
           INPUT_TEXT_1: 'Albertino Jr'
 
