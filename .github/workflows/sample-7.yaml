@@ -1,6 +1,8 @@
 name: 07_Using_Inputs_Flow
+
 on:
   workflow_dispatch:
+
     inputs:
         INPUT_TEXT_1:
             description: "Input text value"
@@ -25,6 +27,7 @@ on:
               - option 1
               - option 2
               - option 3
+
 jobs:
   use_input_job:
     timeout-minutes: 2
