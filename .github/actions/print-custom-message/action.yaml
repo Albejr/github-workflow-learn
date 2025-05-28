@@ -1,4 +1,5 @@
 name: 03_Input_Action
+description: 'Demonstration of a composite action with an input parameter'
 
 inputs:
   INPUT_TEXT_1:
