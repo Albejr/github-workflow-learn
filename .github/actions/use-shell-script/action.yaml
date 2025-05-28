@@ -1,9 +1,10 @@
 name: 04_Use_Shell_Action
+description: "Action to run a shell script file"
 
 runs:
   using: composite
   steps:
     - name: Run good-bye.sh File Step 1
-      run: good-bye.sh
+      run: bash "${{ github.action_path }}/good-bye.sh"
       shell: bash
 # Added bash shell, because it is required in GitHub Actions composite actions while in act it is optional.

@@ -1,1 +1,1 @@
-echo "echo I am a file and say Goodbye!" > good-bye.sh
+echo "I am a script that says goodbye!"
