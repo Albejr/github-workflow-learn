@@ -15,7 +15,7 @@ jobs:
         run: ls -R .github/actions
 
       - name: Run Composite Action Step 1
-        uses: ./.github/actions/print-message
+        uses: ./actions/print-message
         
       - name: Run Composite Action Step 2
         uses: ./.github/actions/run-sleep
