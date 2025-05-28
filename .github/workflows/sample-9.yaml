@@ -26,4 +26,4 @@ jobs:
           INPUT_TEXT_1: 'Albertino Jr'
 
       - name: Run Composite Action Step 4
-        uses: ./.github/actions/run-sleep
+        uses: ./.github/actions/use-shell-script

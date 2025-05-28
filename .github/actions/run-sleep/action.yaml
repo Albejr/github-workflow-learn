@@ -5,10 +5,7 @@ runs:
   steps:
     - name: Sleep Step 1
       run: echo "Sleeping for 8 seconds..."
-      shell: bash
     - name: Sleep Step 2
       run: sleep 8
-      shell: bash
     - name: Sleep Step 3
       run: echo "Sleep Action Completed!"
-      shell: bash
