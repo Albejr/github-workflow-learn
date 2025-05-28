@@ -12,12 +12,12 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run Composite Action Step 1
-        uses: ./.github/actions/print-message@main
+        uses: ./.github/actions/print-message
         
       - name: Run Composite Action Step 2
-        uses: ./.github/actions/sleep@main
+        uses: ./.github/actions/sleep
 
       - name: Run Composite Action Step 3
-        uses: ./.github/actions/print-custom-message@main
+        uses: ./.github/actions/print-custom-message
         with:
           INPUT_TEXT_1: 'Albertino Jr'
