@@ -1,7 +1,5 @@
 name: 03_List_Repository_Flow
 on:
-    push:
-        branches: [develop]
     workflow_dispatch:
 jobs:
     list_repository_job:
