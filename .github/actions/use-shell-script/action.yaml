@@ -1,7 +1,7 @@
 name: 04_Use_Shell_Action
 
 runs:
-  using: "composite"
+  using: composite
   steps:
     - name: Run good-bye.sh File Step 1
       run: good-bye.sh

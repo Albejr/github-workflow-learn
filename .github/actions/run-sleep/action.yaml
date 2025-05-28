@@ -1,7 +1,7 @@
 name: 03_Sleep_Action
 
 runs:
-  using: "composite"
+  using: composite
   steps:
     - name: Sleep Step 1
       run: echo "Sleeping for 8 seconds..."
