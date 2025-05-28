@@ -1,6 +1,7 @@
-name: 02_Sleep_Action
+name: 03_Sleep_Action
+
 runs:
-  using: "composite"
+  using: composite
   steps:
     - name: Sleep Step 1
       run: echo "Sleeping for 8 seconds..."
@@ -11,3 +12,4 @@ runs:
     - name: Sleep Step 3
       run: echo "Sleep Action Completed!"
       shell: bash
+# Added bash shell, because it is required in GitHub Actions composite actions while in act it is optional.

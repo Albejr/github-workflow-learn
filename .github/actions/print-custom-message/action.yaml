@@ -1,15 +1,16 @@
-name: 03_Input_Action
-description: 'Demonstration of a composite action with an input parameter'
+name: 02_Input_Action
+description: "Demonstration of a composite action with an input parameter"
 
 inputs:
   INPUT_TEXT_1:
-    description: 'Value to print'
+    description: "Value to print"
     required: false
-    default: 'Hello from Input Action 03'
+    default: "Hello from Input Action 02"
 
 runs:
-  using: "composite"
+  using: composite
   steps:
     - name: Print Message Step 1
-      run: echo "say => ${{ inputs.INPUT_TEXT_1 }}!"
-      shell: bash # Added bash shell, because it is required in GitHub Actions composite actions while in act it is optional
+      run: echo "Custom input say => ${{ inputs.INPUT_TEXT_1 }}!"
+      shell: bash
+# Added bash shell, because it is required in GitHub Actions composite actions while in act it is optional.
