@@ -1,0 +1,17 @@
+name: 01_1_Print_Message_Flow
+on:
+  workflow_dispatch:
+jobs:
+  print_message_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Group Lines Step 1
+        run: |
+            echo "::group::My title"
+            echo "Inside group, message 1"
+            echo "Inside group, message 2"
+            echo "Inside group, message 3"
+            echo "::endgroup::"
+
+      - name: Print Message Step 2
+        run: printf '%s\n' "Print Hello World Step 2"
