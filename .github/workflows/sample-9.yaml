@@ -12,10 +12,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: List files in directory
-        run: ls -R .github/actions
+        run: ls -R ./.github/actions/
 
       - name: Run Composite Action Step 1
-        uses: ./actions/print-message
+        uses: ./.github/actions/print-message
         
       - name: Run Composite Action Step 2
         uses: ./.github/actions/run-sleep

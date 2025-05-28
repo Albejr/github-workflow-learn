@@ -6,3 +6,6 @@ on:
 jobs:
   sample-5:
     runs-on: ubuntu-latest
+    steps:
+      - name: Using Checkout Repository
+        run: sleep 1
