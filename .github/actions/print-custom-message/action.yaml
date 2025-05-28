@@ -8,7 +8,7 @@ inputs:
     default: 'Hello from Input Action 03'
 
 runs:
-  using: composite
+  using: "composite"
   steps:
     - name: Print Message Step 1
       run: echo "say => ${{ inputs.INPUT_TEXT_1 }}!"
