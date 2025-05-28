@@ -10,11 +10,21 @@ on:
             description: "Input boolean value"
             required: true
             default: "false"
+        INPUT_CHOICE_1:
+            description: "Input choice value"
+            required: true
+            default: "option 1"
+            type: choice
+            options:
+              - option 1
+              - option 2
+              - option 3
 jobs:
   use_input_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Use Input Text Value
-        run: echo "Input Text Value => ${{ github.event.inputs.INPUT_TEXT_1 }}"
-      - name: Use Input Boolean Value
-        run: echo "Input Boolean Value => ${{ github.event.inputs.INPUT_BOOLEAN_1 }}"
+      - name: Use Input Values Step 1
+        run: |
+          echo "Input Text Value => ${{ github.event.inputs.INPUT_TEXT_1 }}"
+          echo "Input Boolean Value => ${{ github.event.inputs.INPUT_BOOLEAN_1 }}"
+          echo "Input Choice Value => ${{ github.event.inputs.INPUT_CHOICE_1 }}"
