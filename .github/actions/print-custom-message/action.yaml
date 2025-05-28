@@ -1,11 +1,11 @@
-name: 03_Input_Action
+name: 02_Input_Action
 description: 'Demonstration of a composite action with an input parameter'
 
 inputs:
   INPUT_TEXT_1:
     description: 'Value to print'
     required: false
-    default: 'Hello from Input Action 03'
+    default: 'Hello from Input Action 02'
 
 runs:
   using: "composite"

@@ -1,8 +1,8 @@
-name: 01_Messages_Action
+name: 04_Use_Shell_Action
 
 runs:
   using: "composite"
   steps:
-    - name: Print Message Step 1
-      run: echo "Hello from Messages Action 01 Step 1"
+    - name: Run good-bye.sh File Step 1
+      run: good-bye.sh
       shell: bash # Added bash shell, because it is required in GitHub Actions composite actions while in act it is optional

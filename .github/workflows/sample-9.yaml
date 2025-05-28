@@ -15,7 +15,7 @@ jobs:
         run: ls -R ./.github/actions/
 
       - name: Run Composite Action Step 1
-        uses: ./.github/actions/print-message
+        uses: ./.github/actions/print-messages
         
       - name: Run Composite Action Step 2
         uses: ./.github/actions/run-sleep
@@ -24,3 +24,6 @@ jobs:
         uses: ./.github/actions/print-custom-message
         with:
           INPUT_TEXT_1: 'Albertino Jr'
+
+      - name: Run Composite Action Step 4
+        uses: ./.github/actions/run-sleep

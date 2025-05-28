@@ -1,0 +1,1 @@
+echo "I am a file and say Goodbye!"
