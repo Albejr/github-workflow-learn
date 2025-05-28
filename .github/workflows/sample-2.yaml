@@ -1,5 +1,6 @@
 name: 02_Print_Scheduled_Message_Flow
 on:
+  workflow_dispatch: 
   schedule: # This cron expression runs the workflow every 5 minutes
     - cron: "*/5 * * * *" 
 jobs:
