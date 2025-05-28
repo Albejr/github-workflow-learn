@@ -7,11 +7,8 @@ jobs:
     steps:
       - name: Print Group Lines Step 1
         run: |
-            echo "::group::My title"
+            echo "::group::My title Group"
             echo "Inside group, message 1"
             echo "Inside group, message 2"
             echo "Inside group, message 3"
             echo "::endgroup::"
-
-      - name: Print Message Step 2
-        run: printf '%s\n' "Print Hello World Step 2"
