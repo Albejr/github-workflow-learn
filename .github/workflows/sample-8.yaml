@@ -1,14 +1,23 @@
 name: 08_Composite_Actions_Flow
+description: 'Demonstration of using multiple composite actions in a workflow'
+
 on: 
     workflow_dispatch:
+
 jobs:
   composite_action_job:
     runs-on: ubuntu-latest
     steps:
+      - name: Using Checkout Repository
+        uses: actions/checkout@v4
+
       - name: Run Composite Action Step 1
-        uses: ./.github/actions/sample-1.yaml
+        uses: ./.github/actions/sample-1.yaml@main
         
       - name: Run Composite Action Step 2
-        uses: ./.github/actions/sample-2.yaml
-        
-        
+        uses: ./.github/actions/sample-2.yaml@main
+
+      - name: Run Composite Action Step 3
+        uses: ./.github/actions/sample-3.yaml@main
+        with:
+          INPUT_TEXT_1: 'Albertino Jr'
