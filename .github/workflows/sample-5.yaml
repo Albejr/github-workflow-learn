@@ -1,6 +1,0 @@
-name: 05_Call_Reusable_Action_Flow
-on:
-  workflow_dispatch:
-jobs:
-  call_reusable_job:
-      uses: ./.github/workflows/sample-5_1.yaml

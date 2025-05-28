@@ -1,23 +1,9 @@
-name: 08_Composite_Actions_Flow
-description: 'Demonstration of using multiple composite actions in a workflow'
+name: 08_Use_Reusable_Work_Flow
+description: 'Demonstration of using a reusable workflow'
 
-on: 
-    workflow_dispatch:
-
+on:
+  workflow_dispatch:
+    
 jobs:
-  composite_action_job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Using Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Run Composite Action Step 1
-        uses: ./.github/actions/print-message
-        
-      - name: Run Composite Action Step 2
-        uses: ./.github/actions/sleep
-
-      - name: Run Composite Action Step 3
-        uses: ./.github/actions/print-custom-message
-        with:
-          INPUT_TEXT_1: 'Albertino Jr'
+  use_reusable_workflow_job:
+      uses: ./.github/workflows/sample-8_1.yaml

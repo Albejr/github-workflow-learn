@@ -1,8 +1,10 @@
-name: 05_1_Create_Reusable_Action_Flow
+name: 08_1_Create_Reusable_Work_Flow
+
 on:
   workflow_call:
+    
 jobs:
-  create_reusable_job:
+  create_reusable_workflow_job:
     runs-on: ubuntu-latest
     steps:
       - name: Create Reusable Step 1
