@@ -1,0 +1,20 @@
+name: 07_Using_Inputs_Flow
+on:
+  workflow_dispatch:
+    inputs:
+        INPUT_TEXT_1:
+            description: "Input text value"
+            required: true
+            default: "Albertino Júnior"
+        INPUT_BOOLEAN_1:
+            description: "Input boolean value"
+            required: true
+            default: "false"
+jobs:
+  use_input_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Use Input Text Value
+        run: echo "Input Text Value => ${{ github.event.inputs.INPUT_TEXT_1 }}"
+      - name: Use Input Boolean Value
+        run: echo "Input Boolean Value => ${{ github.event.inputs.INPUT_BOOLEAN_1 }}"
