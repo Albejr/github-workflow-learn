@@ -1,4 +1,5 @@
 name: 03_List_Repository_Flow
+description: "This workflow lists the contents of the repository using the checkout action."
 
 on:
     workflow_dispatch:
@@ -12,6 +13,6 @@ jobs:
             - name: List Repository Step 1
               run: echo "Listing repository contents..."
             - name: List Repository Step 2
-              run: ls -la
+              run: ls -all
             - name: List Repository Step 3
               run: echo "Repository listing complete!"

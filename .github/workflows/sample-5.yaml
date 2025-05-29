@@ -1,11 +1,12 @@
-name: 05_Flow
+name: 05_Sequence_work_Flow
+description: "This workflow runs before the completion of another workflow. Vide sample-5_1.yaml"
 
 on:
   workflow_dispatch:
 
 jobs:
-  sample-5:
+  sleep_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Using Checkout Repository
-        run: sleep 1
+      - name: sleep Step 1
+        run: sleep 5
