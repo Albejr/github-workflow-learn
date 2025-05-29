@@ -13,6 +13,6 @@ jobs:
             - name: List Repository Step 1
               run: echo "Listing repository contents..."
             - name: List Repository Step 2
-              run: ls -all
+              run: ls -R
             - name: List Repository Step 3
               run: echo "Repository listing complete!"
