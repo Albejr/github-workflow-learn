@@ -1,4 +1,5 @@
 name: 01_1_Print_Message_Flow
+description: "This workflow prints a message inside a group in the GitHub Actions log."
 
 on:
   workflow_dispatch:

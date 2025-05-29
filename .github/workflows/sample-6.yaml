@@ -1,4 +1,5 @@
 name: 06_Using_Needs_Flow
+description: "This workflow demonstrates how to use the 'needs' keyword to create dependencies between jobs and pass outputs from one job to another."
 
 on: 
   workflow_dispatch:

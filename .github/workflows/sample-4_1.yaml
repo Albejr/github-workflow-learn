@@ -1,4 +1,5 @@
 name: 04_1_List_Context_Variables_Flow
+description: "This workflow lists various context variables available in GitHub Actions."
 
 on:
   workflow_dispatch:

@@ -1,0 +1,16 @@
+name: 05_Sequence_Child_Work_Flow
+description: "This workflow runs after the completion of another workflow. vide sample-5.yaml"
+
+on:
+  workflow_run:
+    workflows: ["05_Sequence_work_Flow"]
+    branches: [develop]
+    types:
+      - completed
+
+jobs:
+  sleep_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: sleep Step 1
+        run: sleep 5

@@ -1,4 +1,5 @@
 name: 07_Using_Inputs_Flow
+description: "This workflow demonstrates how to use inputs in a GitHub Actions workflow, allowing users to provide values when manually triggering the workflow."
 
 on:
   workflow_dispatch:
