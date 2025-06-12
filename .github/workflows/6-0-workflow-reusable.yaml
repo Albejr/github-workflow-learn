@@ -1,4 +1,4 @@
-name: Use_Reusable_Work_Flow
+name: Workflow_Reusable
 description: 'Demonstration of using a reusable workflow'
 
 on:
@@ -6,4 +6,4 @@ on:
     
 jobs:
   use_reusable_workflow_job:
-      uses: ./.github/workflows/6-1-workflow-call.yaml
+    uses: ./.github/workflows/6-1-workflow-call.yaml

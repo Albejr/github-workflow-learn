@@ -1,4 +1,4 @@
-name: List_Context_Variables_Flow
+name: Variables_Environment
 description: "This workflow demonstrates the use of environment variables, outputs, and states in GitHub Actions."
 
 on:

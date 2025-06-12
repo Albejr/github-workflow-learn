@@ -1,4 +1,4 @@
-name: Create_Reusable_Work_Flow
+name: Workflow_Call
 description: "This workflow creates a reusable workflow that can be called by other workflows. Vide sample-8.yaml"
 
 on:

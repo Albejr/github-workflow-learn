@@ -1,18 +1,21 @@
-name: List_Repository_Flow
+name: Action_Checkout
 description: "This workflow lists the contents of the repository using the checkout action."
 
 on:
-    workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
-    list_repository_job:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Using Checkout Repository
-              uses: actions/checkout@v4
-            - name: List Repository Step 1
-              run: echo "Listing repository contents..."
-            - name: List Repository Step 2
-              run: ls -R
-            - name: List Repository Step 3
-              run: echo "Repository listing complete!"
+  list_repository_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Using Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: List Repository Step 1
+        run: echo "Listing repository contents..."
+
+      - name: List Repository Step 2
+        run: ls -R
+
+      - name: List Repository Step 3
+        run: echo "Repository listing complete!"

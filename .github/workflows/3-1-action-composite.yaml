@@ -1,4 +1,4 @@
-name: Composite_Actions_Flow
+name: Action_Composite
 description: 'Demonstration of using multiple composite actions in steps of a workflow'
 
 on: 

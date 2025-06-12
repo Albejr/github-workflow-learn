@@ -1,4 +1,4 @@
-name: Print_Scheduled_Message_Flow
+name: Trigger_Scheduled
 description: "This workflow prints a message every 5 minutes using a cron schedule. E.G.: schedule trigger only branch main"
 
 on:

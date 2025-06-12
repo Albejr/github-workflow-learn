@@ -1,4 +1,4 @@
-name: List_Context_Variables_Flow
+name: Variables_Context
 description: "This workflow lists various context variables available in GitHub Actions."
 
 on:
