@@ -2,7 +2,6 @@ name: 02_Print_Scheduled_Message_Flow
 description: "This workflow prints a message every 5 minutes using a cron schedule. E.G.: schedule trigger only branch main"
 
 on:
-  workflow_dispatch: 
   schedule: # This cron expression runs the workflow every 5 minutes
     - cron: "*/5 * * * *"
 
