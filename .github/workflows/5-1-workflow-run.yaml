@@ -1,4 +1,4 @@
-name: 05_Sequence_Child_Work_Flow
+name: 05_1_Sequence_Child_Work_Flow
 description: "This workflow runs after the completion of another workflow. vide sample-5.yaml"
 
 on:
