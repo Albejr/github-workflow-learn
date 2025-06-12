@@ -6,4 +6,4 @@ on:
     
 jobs:
   use_reusable_workflow_job:
-      uses: ./.github/workflows/sample-8_1.yaml
+      uses: ./.github/workflows/6-1-workflow-call.yaml
