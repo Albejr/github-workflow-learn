@@ -1,4 +1,4 @@
-name: 05_Sequence_work_Flow
+name: Sequence_work_Flow
 description: "This workflow runs before the completion of another workflow. Vide sample-5_1.yaml"
 
 on:

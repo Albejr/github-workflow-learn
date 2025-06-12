@@ -1,4 +1,4 @@
-name: 03_List_Repository_Flow
+name: List_Repository_Flow
 description: "This workflow lists the contents of the repository using the checkout action."
 
 on:

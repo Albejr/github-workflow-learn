@@ -1,4 +1,4 @@
-name: 01_Print_Hello_World_Flow
+name: Print_Hello_World_Flow
 run-name:  Print Hello-World Flow
 description: "A simple workflow to print Hello World"
 
