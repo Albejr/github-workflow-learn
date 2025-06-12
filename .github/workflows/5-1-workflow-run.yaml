@@ -1,9 +1,9 @@
-name: Sequence_Child_Work_Flow
+name: Workflow_Run_Sequence
 description: "This workflow runs after the completion of another workflow. vide sample-5.yaml"
 
 on:
   workflow_run:
-    workflows: ["Sequence_work_Flow"]
+    workflows: ["Workflow_Sequence"]
     branches: [develop]
     types:
       - completed

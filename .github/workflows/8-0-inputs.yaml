@@ -1,33 +1,33 @@
-name: Using_Inputs_Flow
+name: Using_Inputs
 description: "This workflow demonstrates how to use inputs in a GitHub Actions workflow, allowing users to provide values when manually triggering the workflow."
 
 on:
   workflow_dispatch:
 
     inputs:
-        INPUT_TEXT_1:
-            description: "Input text value"
-            type: string
-            required: true
-            default: "Albertino Júnior"
-        INPUT_NUMBER_1:
-            description: "Input number value"
-            type: number
-            required: true
-            default: 99
-        INPUT_BOOLEAN_1:
-            description: "Input boolean value"
-            type: boolean
-            required: true
-            default: false
-        INPUT_CHOICE_1:
-            description: "Input choice value"
-            type: choice
-            required: true
-            options:
-              - option 1
-              - option 2
-              - option 3
+      INPUT_TEXT_1:
+        description: "Input text value"
+        type: string
+        required: true
+        default: "Albertino Júnior"
+      INPUT_NUMBER_1:
+        description: "Input number value"
+        type: number
+        required: true
+        default: 99
+      INPUT_BOOLEAN_1:
+        description: "Input boolean value"
+        type: boolean
+        required: true
+        default: false
+      INPUT_CHOICE_1:
+        description: "Input choice value"
+        type: choice
+        required: true
+        options:
+          - option 1
+          - option 2
+          - option 3
 
 jobs:
   use_input_job:

@@ -1,19 +1,31 @@
-name: Print_Hello_World_Flow
+name: Print_Messages
 run-name:  Print Hello-World Flow
-description: "A simple workflow to print Hello World"
+description: "This workflow prints a message inside a group in the GitHub Actions log."
 
 on:
   push:
     branches: [develop]
   pull_request:
-    branches: [develop]
+    branches: [main]
   workflow_dispatch:
 
 jobs:
-  print_hello_world_job:
+  print_message_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Hello World Step 1
+      - name: Print Message Step 1
         run: echo "Hello world!"
-      - name: Print Hello World Step 2
+        
+      - name: Print Message Step 2
         run: echo "Great Job!"
+  
+  print_message_group_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Grouped Step 1
+        run: |
+          echo "::group::My title Group"
+          echo "Inside group, message 1"
+          echo "Inside group, message 2"
+          echo "Inside group, message 3"
+          echo "::endgroup::"
