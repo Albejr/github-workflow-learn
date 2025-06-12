@@ -12,6 +12,7 @@ jobs:
     steps:
       - name: Set Job Output Step 1
         run: echo "First job completed."
+        
   use_needed_job:
     needs: create_needed_job
     runs-on: ubuntu-latest
