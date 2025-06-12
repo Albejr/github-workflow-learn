@@ -24,6 +24,6 @@
 
 ![workflow-call](https://github.com/Albejr/github-workflow-learn/actions/workflows/6-1-workflow-call.yaml/badge.svg?branch=main)
 
-![jobs-needs](https://github.com/Albejr/github-workflow-learn/actions/workflows/7-0-jobs-needs/badge.svg?branch=main)
+![jobs-needs](https://github.com/Albejr/github-workflow-learn/actions/workflows/7-0-jobs-needs.yaml/badge.svg?branch=main)
 
-![inputs](https://github.com/Albejr/github-workflow-learn/actions/workflows/8-0-inputs/badge.svg?branch=main)
+![inputs](https://github.com/Albejr/github-workflow-learn/actions/workflows/8-0-inputs.yaml/badge.svg?branch=main)
