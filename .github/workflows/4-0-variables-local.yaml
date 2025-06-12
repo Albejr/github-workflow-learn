@@ -1,4 +1,4 @@
-name: 04_List_Variables_Flow
+name: List_Variables_Flow
 description: "This workflow demonstrates the use of environment variables, job-specific variables, and step-specific variables in GitHub Actions."
 
 on:

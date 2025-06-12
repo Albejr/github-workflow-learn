@@ -1,4 +1,4 @@
-name: 06_Use_Reusable_Work_Flow
+name: Use_Reusable_Work_Flow
 description: 'Demonstration of using a reusable workflow'
 
 on:
