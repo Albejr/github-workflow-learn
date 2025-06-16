@@ -25,3 +25,5 @@
 ![Jobs_Needs](https://github.com/Albejr/github-workflow-learn/actions/workflows/7-0-jobs-needs.yaml/badge.svg?branch=main)
 
 ![Using_Inputs](https://github.com/Albejr/github-workflow-learn/actions/workflows/8-0-inputs.yaml/badge.svg?branch=main)
+
+![If_Condition](https://github.com/Albejr/github-workflow-learn/actions/workflows/9-0-condition.yaml/badge.svg?branch=main)
