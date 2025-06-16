@@ -1,8 +1,10 @@
 name: If_Condition
 run-name: If Condition Flow
 description: "This workflow demonstrates the use of if conditions in GitHub Actions."
+
 on:
   workflow_dispatch:
+
 jobs:
   conditional_job:
     runs-on: ubuntu-latest
@@ -51,7 +53,7 @@ jobs:
           else
             echo "This is an unknown branch: ${{ github.ref }}"
           fi
-          
+
   finalize_job:
     runs-on: ubuntu-latest
     needs: conditional_job
