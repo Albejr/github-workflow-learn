@@ -8,48 +8,45 @@ on:
 jobs:
   conditional_job:
     runs-on: ubuntu-latest
-    steps:
+    steps:   
       - name: Conditional Step 1
-        run: echo "This step always runs."
+        if: github.event_name == 'push'
+        run: echo "This step runs only on PUSH events."
 
       - name: Conditional Step 2
         if: github.event_name == 'workflow_dispatch'
         run: echo "This step runs only on WORKFLOW DISPATCH."
 
       - name: Conditional Step 3
-        if: github.event_name != 'workflow_dispatch'
-        run: echo "This step runs only when the event is NOT workflow dispatch."
-
-      - name: Conditional Step 4
         if: always()
         run: echo "This step ALWAYS runs, regardless of previous conditions."
     
-      - name: Conditional Step 5
+      - name: Conditional Step 4
         if: failure()
         run: echo "This step runs only if a previous step FAILED."
       
-      - name: Conditional Step 6
+      - name: Conditional Step 5
         if: success()
         run: echo "This step runs only if all previous steps SUCCEEDED."
       
-      - name: Conditional Step 7
+      - name: Conditional Step 6
         if: cancelled()
         run: echo "This step runs only if the workflow was CANCELLED."
       
-      - name: Conditional Step 8
-        if: github.repository == 'github-workflow-learn'
+      - name: Conditional Step 7
+        if: github.repository == 'Albejr/github-workflow-learn'
         run: echo "This step runs only if the repository is GITHUB-WORKFLOW-LEARN."
 
-      - name: Conditional Step 9
-        if: github.ref_name == 'main'
-        run: echo "This step runs only if the branch is MAIN."
+      - name: Conditional Step 8
+        if: github.ref_name == 'develop'
+        run: echo "This step runs only if the branch is DEVELOP."
 
-      - name: Conditional Step 10
+      - name: Conditional Step 9
         run: |
           if [ ${{ github.ref }} == 'refs/heads/master' ]; then
             echo "This step runs only if the branch is MASTER."
-          elif [ ${{ github.ref }} == 'refs/heads/develop' ]; then
-            echo "This step runs only if the branch is DEVELOP."
+          elif [ ${{ github.ref }} == 'refs/heads/main' ]; then
+            echo "This step runs only if the branch is MAIN."
           else
             echo "This is an unknown branch: ${{ github.ref }}"
           fi
@@ -57,6 +54,7 @@ jobs:
   finalize_job:
     runs-on: ubuntu-latest
     needs: conditional_job
-    if: always() && (needs.conditional_job.result == 'success')
+    if: needs.conditional_job.result == 'success'
     steps:
-      - run: echo "Finalizing workflow"
+      - name: Conditional Step 1
+        run: echo "Finalizing workflow"
