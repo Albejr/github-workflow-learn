@@ -11,7 +11,7 @@
 
 [![Variables_Context](https://github.com/Albejr/github-workflow-learn/actions/workflows/4-1-variables-context.yaml/badge.svg?branch=main)](https://github.com/Albejr/github-workflow-learn/actions/workflows/4-1-variables-context.yaml)
 
-[![Variables_Environment](https://github.com/Albejr/github-workflow-learn/actions/workflows/4-2-variables-environment/badge.svg?branch=main)](https://github.com/Albejr/github-workflow-learn/actions/workflows/4-2-variables.yaml)
+[![Variables_Environment](https://github.com/Albejr/github-workflow-learn/actions/workflows/4-2-variables-environment.yaml/badge.svg?branch=main)](https://github.com/Albejr/github-workflow-learn/actions/workflows/4-2-variables.yaml)
 
 [![Workflow_Sequence](https://github.com/Albejr/github-workflow-learn/actions/workflows/5-0-workflow-sequence.yaml/badge.svg?branch=main)](https://github.com/Albejr/github-workflow-learn/actions/workflows/5-0-workflow-sequence.yaml)
 
