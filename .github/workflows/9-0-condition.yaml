@@ -56,5 +56,5 @@ jobs:
     needs: conditional_job
     if: needs.conditional_job.result == 'success'
     steps:
-      - name: Conditional Step 9
+      - name: Conditional Step 1
         run: echo "Finalizing workflow"
