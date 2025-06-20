@@ -19,9 +19,6 @@ jobs:
  
   result_permission_job2:
     runs-on: ubuntu-latest
-
-    needs: required_permission_job
-    
     steps:
       - name: Permission Required Step 1
         run: "echo permission: ${{ github.event.inputs.permission }}"
