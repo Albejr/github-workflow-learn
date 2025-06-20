@@ -1,0 +1,51 @@
+name: Check_Permission
+run-name: Check Permission Flow
+description: "This workflow checks for user permission before proceeding with the job."
+    
+on:
+  workflow_dispatch:
+
+jobs:
+  required_permission_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Permissions Step 1
+        run: |
+          if [ "${{ github.event.inputs.permission }}" != "true" ]; then
+            echo "Permission not granted. Exiting..."
+            exit 1
+          fi
+          echo "Permission granted. Proceeding the workflow..."
+
+  previous_permission_job:
+    runs-on: ubuntu-latest
+
+    needs: required_permission_job
+    
+    if: needs.required_permission_job.result == 'success'
+    steps:
+      - name: Permission Required Step 1
+        run: echo "This step runs only if permission was granted in the previous job."
+
+  set_permission_job:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Create directory
+        run: mkdir -p ${{ github.workspace }}/new-folder
+
+  check_permission_job:
+    runs-on: ubuntu-latest
+
+    needs: set_permission_job
+
+    if: needs.set_permission_job.result == 'failure'
+    steps:
+      - name: Previous Job Step 1
+        run: echo "This step runs only if the previous job failed due to permission not granted."
