@@ -1,5 +1,5 @@
 name: Workflow_Sequence
-description: "This workflow runs before the completion of another workflow. Vide sample-5_1.yaml"
+description: "This workflow runs before the completion of another workflow. Vide 5-1-workflow-run.yaml"
 
 on:
   workflow_dispatch:
@@ -10,3 +10,6 @@ jobs:
     steps:
       - name: sleep Step 1
         run: sleep 5
+
+      - name: Finish Step 2
+        run: echo "The FIRST workflow completed!"

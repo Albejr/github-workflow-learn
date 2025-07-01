@@ -1,5 +1,5 @@
 name: Workflow_Run_Sequence
-description: "This workflow runs after the completion of another workflow. vide sample-5.yaml"
+description: "This workflow runs after the completion of another workflow. vide 5-0-workflow-sequence.yaml"
 
 on:
   workflow_run:
@@ -14,3 +14,6 @@ jobs:
     steps:
       - name: sleep Step 1
         run: sleep 5
+
+      - name: Finish Step 2
+        run: echo "The LAST workflow completed!"
