@@ -1,0 +1,13 @@
+name: Debug_Messages
+run-name: Debug Hello-World Flow
+description: "This workflow runs a debug script to print messages in the GitHub Actions log."
+
+on:
+  workflow_dispatch:
+    
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print debug Step 1
+        run:  echo '::debug::action successfully debugged'

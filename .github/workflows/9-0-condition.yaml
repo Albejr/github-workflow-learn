@@ -42,7 +42,7 @@ jobs:
         run: echo "This step runs only if the branch is DEVELOP."
 
       - name: Conditional Step 9
-        run: |
+        run: | #GITHUB_REF
           if [ ${{ github.ref }} == 'refs/heads/master' ]; then
             echo "This step runs only if the branch is MASTER."
           elif [ ${{ github.ref }} == 'refs/heads/main' ]; then
