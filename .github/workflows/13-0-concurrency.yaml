@@ -1,0 +1,20 @@
+name: Cancel_InProgress
+run-name: Cancel In Progress Workflow
+description: "This workflow cancels in-progress jobs when a new run is triggered."
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  cancel_in_progress_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel In Progress Jobs
+        run: echo "This job will cancel in-progress jobs for the same workflow and branch."
+      
+
+

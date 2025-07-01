@@ -1,0 +1,13 @@
+name: Cancel_InProgress_Jobs
+run-name: Cancel In Progress Jobs
+description: "This workflow cancels in-progress jobs when a new run is triggered."
+
+on:
+  workflow_dispatch:
+
+jobs:
+  cancel_in_progress_job:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: example-group
+      cancel-in-progress: true
