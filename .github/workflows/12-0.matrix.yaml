@@ -1,4 +1,4 @@
-name: Matrix_Job_Flow
+name: Using_Matrix
 run-name: Matrix Job Flow
 description: "This workflow demonstrates a job that runs with a matrix configuration."
 
