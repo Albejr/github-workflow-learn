@@ -30,4 +30,8 @@
 
 [![If_Condition](https://github.com/Albejr/github-workflow-learn/actions/workflows/9-0-condition.yaml/badge.svg?branch=main)](https://github.com/Albejr/github-workflow-learn/actions/workflows/9-0-condition.yaml)
 
+[![Check_Permission](https://github.com/Albejr/github-workflow-learn/actions/workflows/10-0-permission.yaml/badge.svg?branch=main)](https://github.com/Albejr/github-workflow-learn/actions/workflows/10-0-permission.yaml)
+
+[![Fail_Job_By_Non_Zero](https://github.com/Albejr/github-workflow-learn/actions/workflows/11-0-action-fail.yaml/badge.svg?branch=main)](https://github.com/Albejr/github-workflow-learn/actions/workflows/11-0-action-fail.yaml)
+
 [![Using_Matrix](https://github.com/Albejr/github-workflow-learn/actions/workflows/12-0-matrix.yaml/badge.svg?branch=main)](https://github.com/Albejr/github-workflow-learn/actions/workflows/12-0-matrix.yaml)
