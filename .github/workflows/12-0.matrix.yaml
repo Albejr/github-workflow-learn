@@ -1,0 +1,20 @@
+name: Using_Matrix
+run-name: Matrix Job Flow
+description: "This workflow demonstrates a job that runs with a matrix configuration."
+
+on:
+  workflow_dispatch:
+    
+jobs:
+  matrix_job:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        node: [14, 16, 18]
+    steps:
+      - name: Matrix Job Step 1
+        run: |
+          echo "Running on OS: ${{ matrix.os }} with Node.js version: ${{ matrix.node }}"
+          node --version
+          exit 0

@@ -1,5 +1,8 @@
 # github wf learn
+
 [![Print_Messages](https://github.com/Albejr/github-workflow-learn/actions/workflows/1-0-print-message.yaml/badge.svg?branch=main)](https://github.com/Albejr/github-workflow-learn/actions/workflows/1-0-print-message.yaml)
+
+[![Debug_Messages](https://github.com/Albejr/github-workflow-learn/actions/workflows/1-1-debug-message.yaml/badge.svg?branch=main)](https://github.com/Albejr/github-workflow-learn/actions/workflows/1-1-debug-message.yaml)
 
 [![Trigger_Scheduled](https://github.com/Albejr/github-workflow-learn/actions/workflows/2-0-trigger-schedule.yaml/badge.svg?branch=main)](https://github.com/Albejr/github-workflow-learn/actions/workflows/2-0-trigger-schedule.yaml)
 
@@ -26,3 +29,5 @@
 [![Using_Inputs](https://github.com/Albejr/github-workflow-learn/actions/workflows/8-0-inputs.yaml/badge.svg?branch=main)](https://github.com/Albejr/github-workflow-learn/actions/workflows/8-0-inputs.yaml)
 
 [![If_Condition](https://github.com/Albejr/github-workflow-learn/actions/workflows/9-0-condition.yaml/badge.svg?branch=main)](https://github.com/Albejr/github-workflow-learn/actions/workflows/9-0-condition.yaml)
+
+[![Using_Matrix](https://github.com/Albejr/github-workflow-learn/actions/workflows/12-0-matrix.yaml/badge.svg?branch=main)](https://github.com/Albejr/github-workflow-learn/actions/workflows/12-0-matrix.yaml)

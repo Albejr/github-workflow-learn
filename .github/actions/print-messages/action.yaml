@@ -6,4 +6,5 @@ runs:
     - name: Print Message Step 1
       run: echo "Hello from Messages Action 01 Step 1"
       shell: bash
+      
 # Added bash shell, because it is required in GitHub Actions composite actions while in act it is optional.

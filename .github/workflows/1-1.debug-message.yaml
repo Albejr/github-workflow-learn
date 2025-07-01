@@ -6,8 +6,14 @@ on:
   workflow_dispatch:
     
 jobs:
-  debug:
+  debug_message_job:
     runs-on: ubuntu-latest
     steps:
       - name: Print debug Step 1
-        run:  echo '::debug::action successfully debugged'
+        run: echo "Runner Debug Enabled => ${{ runner.debug }}" #RUNNER_DEBUG 
+
+      - name: Print debug Step 2
+        run:  |
+          echo "::debug::Debug Message Sample."
+          echo "::warning::Warning Message Sample."
+          echo "::error::Error Message Sample."
