@@ -10,7 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print debug Step 1
-        run: echo "Runner Debug Enabled => ${{ runner.debug }}" #RUNNER_DEBUG 
+        run: |
+          if [ "$ACTIONS_STEP_DEBUG" = "true" ]; then
+            echo "Runner Debug Enabled"
+          else
+            echo "Runner Debug Disabled"
+          fi
 
       - name: Print debug Step 2
         run:  |
