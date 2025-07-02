@@ -35,3 +35,7 @@
 [![Fail_Job_By_Non_Zero](https://github.com/Albejr/github-workflow-learn/actions/workflows/11-0-action-fail.yaml/badge.svg?branch=main)](https://github.com/Albejr/github-workflow-learn/actions/workflows/11-0-action-fail.yaml)
 
 [![Using_Matrix](https://github.com/Albejr/github-workflow-learn/actions/workflows/12-0-matrix.yaml/badge.svg?branch=main)](https://github.com/Albejr/github-workflow-learn/actions/workflows/12-0-matrix.yaml)
+
+[![Cancel_InProgress](https://github.com/Albejr/github-workflow-learn/actions/workflows/13-0-concurrency.yaml/badge.svg?branch=main)](https://github.com/Albejr/github-workflow-learn/actions/workflows/13-0-concurrency.yaml)
+
+[![Cancel_InProgress_Jobs](https://github.com/Albejr/github-workflow-learn/actions/workflows/13-1-jobs-concurrency.yaml/badge.svg?branch=main)](https://github.com/Albejr/github-workflow-learn/actions/workflows/13-1-jobs-concurrency.yaml)
