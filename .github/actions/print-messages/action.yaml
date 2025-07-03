@@ -1,7 +1,9 @@
 name: 01_Messages_Action
+description: A GitHub Action that prints messages to the console.
 
 runs:
   using: composite
+  
   steps:
     - name: Print Message Step 1
       run: echo "Hello from Messages Action 01 Step 1"

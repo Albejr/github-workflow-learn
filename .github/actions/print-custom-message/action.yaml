@@ -9,6 +9,7 @@ inputs:
 
 runs:
   using: composite
+  
   steps:
     - name: Print Message Step 1
       run: echo "Custom input say => ${{ inputs.INPUT_TEXT_1 }}!"

@@ -1,5 +1,5 @@
 name: Workflow_Call
-description: "This workflow creates a reusable workflow that can be called by other workflows. Vide sample-8.yaml"
+description: "This workflow creates a reusable workflow that can be called by other workflows. Vide 6-0-workflow-reusable.yaml"
 
 on:
   workflow_call:

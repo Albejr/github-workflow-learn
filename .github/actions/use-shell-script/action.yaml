@@ -3,6 +3,7 @@ description: "Action to run a shell script file"
 
 runs:
   using: composite
+  
   steps:
     - name: Run good-bye.sh File Step 1
       run: bash "${{ github.action_path }}/good-bye.sh"
