@@ -28,6 +28,8 @@ on:
           - option 1
           - option 2
           - option 3
+      INPUT_ENVIRONMENT_1:
+        type: environment
 
 jobs:
   use_input_job:
@@ -40,3 +42,4 @@ jobs:
           echo "Input Number Value => ${{ github.event.inputs.INPUT_NUMBER_1 }}"
           echo "Input Boolean Value => ${{ github.event.inputs.INPUT_BOOLEAN_1 }}"
           echo "Input Choice Value => ${{ github.event.inputs.INPUT_CHOICE_1 }}"
+          echo "Input environment Value => ${{ github.event.inputs.INPUT_ENVIRONMENT_1 }}"
