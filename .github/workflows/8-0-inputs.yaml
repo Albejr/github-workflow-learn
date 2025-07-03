@@ -28,8 +28,12 @@ on:
           - option 1
           - option 2
           - option 3
+          - option 4
+          - option 5
       INPUT_ENVIRONMENT_1:
+        description: "Input environment value"
         type: environment
+        required: true
 
 jobs:
   use_input_job:

@@ -1,7 +1,9 @@
 name: 03_Sleep_Action
+DEscription: A GitHub Action that sleeps for a specified duration.
 
 runs:
   using: composite
+  
   steps:
     - name: Sleep Step 1
       run: echo "Sleeping for 8 seconds..."
